@@ -82,7 +82,7 @@ const MessageSection = () => {
             >
               <div className="bg-white/10 md:pb-5 pb-3 px-5 border border-white border-b-8 rounded-t-2xl rounded-bl-2xl">
                 <h2 className="text-white flex gap-2">
-                  Sip U
+                  Stir U
                   <FaMartiniGlassCitrus />
                 </h2>
               </div>
