@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import MessageSection from "./sections/MessageSection";
 import AmenitiesSection from "./sections/AmenitiesSection";
 import BarDelightSection from "./sections/BarDelightSection";
+import BenefitSection from "./sections/BenefitSection";
+import TestimonialSection from "./sections/TestimonialSection";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const App = () => {
@@ -24,10 +26,11 @@ const App = () => {
           <MessageSection />
           <AmenitiesSection />
           <BarDelightSection />
+          <div>
+            <BenefitSection />
+            <TestimonialSection />
+          </div>
         </div>
-        {/* <div className="flex h-[400vh] border">
-          <h1 className="">Hello</h1>
-        </div> */}
       </div>
     </main>
   );

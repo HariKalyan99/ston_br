@@ -200,9 +200,77 @@ body::-webkit-scrollbar {
       }
     }
   }
+
+  .benefit-section {
+    @apply min-h-dvh bg-main-bg overflow-hidden relative;
+
+    p {
+      @apply text-white font-paragraph text-center text-lg;
+    }
+
+    .first-title {
+      @apply rotate-[3deg] relative z-10;
+    }
+
+    .second-title {
+      @apply rotate-[-1deg] md:-translate-y-5;
+    }
+
+    .third-title {
+      @apply rotate-[1deg] md:-translate-y-12 relative z-10;
+    }
+
+    .fourth-title {
+      @apply rotate-[-5deg] md:-translate-y-12;
+    }
+
+    .vd-pin-section {
+      @apply md:h-[110vh] h-dvh overflow-hidden md:!-translate-y-[15%] md:mt-0 mt-20;
+
+      video {
+        @apply size-full absolute inset-0 object-cover;
+      }
+
+      .play-btn {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[9vw] flex justify-center items-center bg-[#ffffff1a] backdrop-blur-xl rounded-full;
+      }
+
+      img:first-of-type {
+        @apply size-[15vw];
+      }
+    }
+  }
+
+  .testimonials-section {
+    @apply bg-white relative w-full h-[120dvh];
+
+    .pin-box {
+      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
+
+      .vd-card {
+        @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-white;
+      }
+    }
+
+    h1 {
+      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
+    }
+  }
 }
 
 .nutrition-section {
   background-color: var(--color-main-bg);
   /* background-image: radial-gradient(circle, #f3ece2, #dcccb0); */
+}
+
+.spin-circle {
+  animation: spin 20s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
