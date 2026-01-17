@@ -77,7 +77,7 @@ const BarDelightSection = () => {
       <div className="flex md:flex-row flex-col justify-between md:px-5 mt-14 md:mt-0">
         <div className="relative inline-block md:translate-y-20 ">
           <div className="general-title relative flex flex-col justify-center items-center gap-24">
-            <div className="overflow-hidden place-self-start">
+            <div className="overflow-hidden lg:place-self-start">
               <h1 className="nutrition-title">bar quality's</h1>
             </div>
             <div
@@ -95,7 +95,7 @@ const BarDelightSection = () => {
 
         <div className="flex md:justify-center items-center translate-y-5">
           <div className="md:max-w-xs max-w-md">
-            <p className="text-lg md:text-right text-white font-paragraph">
+            <p className="text-lg md:text-right text-center text-white font-paragraph">
               A refreshing vodka-based cocktail with bright citrus notes,
               balanced strength, and a smooth finish. Best enjoyed chilled and
               served on ice for a crisp, clean experience.

@@ -34,7 +34,7 @@ const HeroSection = () => {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           ease: "circ.out",
         },
-        "-=0.5"
+        "-=0.5",
       )
       .from(
         titleSplit.chars,
@@ -43,7 +43,7 @@ const HeroSection = () => {
           stagger: 0.02,
           ease: "power2.out",
         },
-        "-=0.5"
+        "-=0.5",
       );
 
     const heroTl = gsap.timeline({
@@ -65,29 +65,14 @@ const HeroSection = () => {
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
-        {isTablet ? (
-          <>
-            {isMobile && (
-              <img
-                src="src/assets/videos/resto-bg1.mp4"
-                className="absolute bottom-40 size-full object-cover"
-              />
-            )}
-            <img
-              src="src/assets/videos/resto-bg1.mp4"
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
-            />
-          </>
-        ) : (
-          <video
-            src="src/assets/videos/resto-bg1.mp4"
-            autoPlay
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            loop
-          />
-        )}
+        <video
+          src="src/assets/videos/resto-bg1.mp4"
+          autoPlay
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          loop
+        />
         <div className="hero-content opacity-0">
           <div className="overflow-hidden">
             <h1 className="hero-title bg-white/10">Hidden Grove</h1>
