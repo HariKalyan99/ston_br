@@ -69,8 +69,8 @@ const BarDelightSection = () => {
   return (
     <section className="nutrition-section">
       <img
-        src="src/assets/images/nutshell-bottom.png"
-        alt="src/assets/images/nutshell-bottom.png"
+        src="/images/nutshell-bottom.png"
+        alt="nutshell-bottom.png"
         className="big-img"
       />
 

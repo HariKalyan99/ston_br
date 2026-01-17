@@ -1,14 +1,14 @@
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 const FooterSection = () => {
-  const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
+  // const isMobile = useMediaQuery({
+  //   query: "(max-width: 768px)",
+  // });
 
   return (
     <section className="footer-section">
       <img
-        src="src/assets/images/nutshell-bottom.png"
+        src="/images/nutshell-bottom.png"
         alt=""
         className="w-full object-cover -translate-y-1 rotate-180"
       />
@@ -21,7 +21,7 @@ const FooterSection = () => {
         </div>
 
         <video
-          src="src/assets/videos/splash.mp4"
+          src="/videos/splash.mp4"
           autoPlay
           playsInline
           muted
@@ -30,13 +30,13 @@ const FooterSection = () => {
 
         <div className="flex-center gap-5 relative z-10 md:mt-20 mt-5">
           <div className="social-btn">
-            <img src="src/assets/images/yt.svg" alt="" />
+            <img src="/images/yt.svg" alt="" />
           </div>
           <div className="social-btn">
-            <img src="src/assets/images/insta.svg" alt="" />
+            <img src="/images/insta.svg" alt="" />
           </div>
           <div className="social-btn">
-            <img src="src/assets/images/tiktok.svg" alt="" />
+            <img src="/images/tiktok.svg" alt="" />
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const FooterSection = () => {
                 placeholder="Enter your email"
                 className="w-full bg-transparent placeholder:font-sans placeholder:text-[#999999] text-white outline-none"
               />
-              <img src="src/assets/images/arrow.svg" alt="arrow" />
+              <img src="/images/arrow.svg" alt="arrow" />
             </div>
           </div>
         </div>

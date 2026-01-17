@@ -48,7 +48,7 @@ const AmenitiesSlider = () => {
             xPercent: -22,
             ease: "power1.inOut",
           },
-          "<"
+          "<",
         )
         .to(
           ".second-text-split",
@@ -56,7 +56,7 @@ const AmenitiesSlider = () => {
             xPercent: -10,
             ease: "power1.inOut",
           },
-          "<"
+          "<",
         );
     }
   });
@@ -71,7 +71,7 @@ const AmenitiesSlider = () => {
             >
               {/* Image */}
               <img
-                src={`src/assets/images/${ind + 1}.png`}
+                src={`/images/${ind + 1}.png`}
                 alt={flavor.name}
                 className="drinks"
               />
